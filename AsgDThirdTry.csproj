@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{192A4846-764A-4C77-830B-63F4FCEE4C86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AsgDThirdTry</RootNamespace>
+    <AssemblyName>AsgDThirdTry</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOfficer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOfficer.Designer.cs">
+      <DependentUpon>AddOfficer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903232009381_a.cs" />
+    <Compile Include="Migrations\201903232009381_a.Designer.cs">
+      <DependentUpon>201903232009381_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903232012307_b.cs" />
+    <Compile Include="Migrations\201903232012307_b.Designer.cs">
+      <DependentUpon>201903232012307_b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291716360_update.cs" />
+    <Compile Include="Migrations\201903291716360_update.Designer.cs">
+      <DependentUpon>201903291716360_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291727220_update1.cs" />
+    <Compile Include="Migrations\201903291727220_update1.Designer.cs">
+      <DependentUpon>201903291727220_update1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291734544_x.cs" />
+    <Compile Include="Migrations\201903291734544_x.Designer.cs">
+      <DependentUpon>201903291734544_x.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291737089_dbs.cs" />
+    <Compile Include="Migrations\201903291737089_dbs.Designer.cs">
+      <DependentUpon>201903291737089_dbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291807002_v.cs" />
+    <Compile Include="Migrations\201903291807002_v.Designer.cs">
+      <DependentUpon>201903291807002_v.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291809057_remove.cs" />
+    <Compile Include="Migrations\201903291809057_remove.Designer.cs">
+      <DependentUpon>201903291809057_remove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291818459_buttons.cs" />
+    <Compile Include="Migrations\201903291818459_buttons.Designer.cs">
+      <DependentUpon>201903291818459_buttons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291822585_f.cs" />
+    <Compile Include="Migrations\201903291822585_f.Designer.cs">
+      <DependentUpon>201903291822585_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291827516_offense.cs" />
+    <Compile Include="Migrations\201903291827516_offense.Designer.cs">
+      <DependentUpon>201903291827516_offense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903291829368_v1.cs" />
+    <Compile Include="Migrations\201903291829368_v1.Designer.cs">
+      <DependentUpon>201903291829368_v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903292041172_a1.cs" />
+    <Compile Include="Migrations\201903292041172_a1.Designer.cs">
+      <DependentUpon>201903292041172_a1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903292046171_updateOffense.cs" />
+    <Compile Include="Migrations\201903292046171_updateOffense.Designer.cs">
+      <DependentUpon>201903292046171_updateOffense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903292053428_f1.cs" />
+    <Compile Include="Migrations\201903292053428_f1.Designer.cs">
+      <DependentUpon>201903292053428_f1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903292104052_cit.cs" />
+    <Compile Include="Migrations\201903292104052_cit.Designer.cs">
+      <DependentUpon>201903292104052_cit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300112147_o.cs" />
+    <Compile Include="Migrations\201903300112147_o.Designer.cs">
+      <DependentUpon>201903300112147_o.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300131514_officer.cs" />
+    <Compile Include="Migrations\201903300131514_officer.Designer.cs">
+      <DependentUpon>201903300131514_officer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="paste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paste.Designer.cs">
+      <DependentUpon>paste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddOfficer.resx">
+      <DependentUpon>AddOfficer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903232009381_a.resx">
+      <DependentUpon>201903232009381_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903232012307_b.resx">
+      <DependentUpon>201903232012307_b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291716360_update.resx">
+      <DependentUpon>201903291716360_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291727220_update1.resx">
+      <DependentUpon>201903291727220_update1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291734544_x.resx">
+      <DependentUpon>201903291734544_x.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291737089_dbs.resx">
+      <DependentUpon>201903291737089_dbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291807002_v.resx">
+      <DependentUpon>201903291807002_v.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291809057_remove.resx">
+      <DependentUpon>201903291809057_remove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291818459_buttons.resx">
+      <DependentUpon>201903291818459_buttons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291822585_f.resx">
+      <DependentUpon>201903291822585_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291827516_offense.resx">
+      <DependentUpon>201903291827516_offense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903291829368_v1.resx">
+      <DependentUpon>201903291829368_v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903292041172_a1.resx">
+      <DependentUpon>201903292041172_a1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903292046171_updateOffense.resx">
+      <DependentUpon>201903292046171_updateOffense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903292053428_f1.resx">
+      <DependentUpon>201903292053428_f1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903292104052_cit.resx">
+      <DependentUpon>201903292104052_cit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300112147_o.resx">
+      <DependentUpon>201903300112147_o.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300131514_officer.resx">
+      <DependentUpon>201903300131514_officer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paste.resx">
+      <DependentUpon>paste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
